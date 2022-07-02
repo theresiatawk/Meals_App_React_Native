@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     padding: 15,
     height: 150,
     borderRadius: 10, 
-    overflow: 'hidden',
+    overflow: Platform.OS == 'android' && Platform.Version >=21 ?'hidden':'visible',
   },
   gridContainer: {
     flex: 1,
